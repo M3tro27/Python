@@ -19,7 +19,7 @@ for input in radky:
                 rozdeleni[1] == "blue" and int(rozdeleni[0]) > 14:
                
                 mozne = False
-                print(cislohry + " " + rozdeleni[0] + " " + rozdeleni[1])
+                #print(cislohry + " " + rozdeleni[0] + " " + rozdeleni[1])
                 break
 
         if not mozne:
@@ -27,5 +27,7 @@ for input in radky:
 
 
     if mozne == True:
+        print(suma, cislohry)
         suma += int(cislohry)
+        
 print(suma)
