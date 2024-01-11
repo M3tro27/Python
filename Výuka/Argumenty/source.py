@@ -7,11 +7,15 @@ def Factorial(cislo):
         faktorial = faktorial * cislo
         cislo = cislo - 1
     
-    return faktorial
+    print(faktorial)
 
-parser = argparse.ArgumentParser(description="Faktorial cisla")
-parser.add_argument("cislo", type=int)
+def Mocnina(cislo, exponent):
+    print(pow(cislo, exponent))
+
+parser = argparse.ArgumentParser(description="Operace")
+parser.add_argument("-n", type=int)
+parser.add_argument("-o", type=str)
+parser.add_argument("-e", type=int, default=1)
 args = parser.parse_args()
 
-faktorial = Factorial(args.cislo)
-print(faktorial)
+
